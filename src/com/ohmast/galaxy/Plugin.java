@@ -61,6 +61,7 @@ public class Plugin extends JavaPlugin {
         if(label.equalsIgnoreCase("wtp")) {
             World world = Bukkit.getWorld(args[0]);
             p.teleport(new Location(world, -74, 15, -39));
+            p.sendMessage(ChatColor.GREEN + "You have been sent to: " + Bukkit.getWorld(args[0]).getName());
         }
 
         return true;
